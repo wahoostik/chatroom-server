@@ -3,7 +3,7 @@
  * Require
  */
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const Server = require('http').Server;
 const socket = require('socket.io');
 
@@ -18,28 +18,26 @@ const port = 3001;
 
 const db = {
   users: {
-    'bouclierman@herocorp.io': {
-      password: 'jennifer',
-      username: 'John',
+    'walter.white@breakingbad.com': {
+      password: 'heisenberg',
+      username: 'Heisenberg',
       color: '#c23616',
     },
-    'acidman@herocorp.io': {
-      password: 'fructis',
-      username: 'Burt',
+    'lebron.james@nba.com': {
+      password: 'number23',
+      username: 'King James',
       color: '#009432',
     },
-    'captain.sportsextremes@herocorp.io': {
-      password: 'pingpong',
-      username: 'Karin',
-      color: '#f0f',
-    }
   }
 };
 
 /*
  * Express
  */
-app.use(bodyParser.json());
+app.use(express.json());
+// on rajoute la gestion des POST body
+app.use(express.urlencoded({extended: true}));
+// app.use(bodyParser.json());
 app.use((request, response, next) => {
   response.header('Access-Control-Allow-Origin', '*');
   // response.header('Access-Control-Allow-Credentials', true);
@@ -47,7 +45,6 @@ app.use((request, response, next) => {
   response.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   next();
 });
-
 
 
 // Page d'accueil du serveur : GET /
