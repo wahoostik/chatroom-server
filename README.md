@@ -1,7 +1,10 @@
 # Server Chatroom
 
-- install `yarn`
-- start `yarn start` : http://localhost:3001
+Lancer la commande yarn pour installer les dépendances nécessaires au fonctionnement du projet.
+`yarn`
+
+Lancer la commande yarn start pour lancer le projet. Le chat se lance sur le port 3200.
+- start server `yarn start` : http://localhost:3001
 
 Routes :
 - `POST http://localhost:3001/login`
@@ -9,15 +12,18 @@ Routes :
     => fournir un objet contenant email et password, par exemple 
     ```
     {
-        email: 'bouclierman@herocorp.io',
-        password: 'jennifer'
+        email: 'walter.white@breakingbad.com',
+        password: 'heisenberg'
+    },
+    {
+        email: 'lebron.james@nba.com',
+        password: 'number23'
     }
     ```
 
    Identifiants valides :
-   - bouclierman@herocorp.io/jennifer
-   - acidman@herocorp.io/fructis
-   - captain.sportsextremes@herocorp.io/pingpong
+- walter.white@breakingbad.com/heisenberg
+- lebron.james@nba.com/number23
 
 
 
