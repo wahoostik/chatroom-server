@@ -22,8 +22,8 @@ Routes :
     ```
 
 Identifiants :
-- walter.white@breakingbad.com/heisenberg
-- lebron.james@nba.com/number23
+walter.white@breakingbad.com/heisenberg
+lebron.james@nba.com/number23
 
 
 
