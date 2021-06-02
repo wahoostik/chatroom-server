@@ -1,7 +1,7 @@
 # Server Chatroom
 
 Lancer la commande yarn pour installer les dépendances nécessaires au fonctionnement du projet.
-`yarn`
+- install `yarn`
 
 Lancer la commande yarn start pour lancer le projet. Le chat se lance sur le port 3200.
 - start server `yarn start` : http://localhost:3001
@@ -21,7 +21,7 @@ Routes :
     }
     ```
 
-   Identifiants valides :
+Identifiants :
 - walter.white@breakingbad.com/heisenberg
 - lebron.james@nba.com/number23
 
